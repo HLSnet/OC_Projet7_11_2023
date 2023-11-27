@@ -1,11 +1,19 @@
 package com.nnk.springboot.domain;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "users")
 public class User {
+    /*
+    Integer id;
+    String username;
+    String password;
+    String fullname;
+    String role;
+     */
+
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
